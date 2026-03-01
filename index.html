@@ -172,31 +172,19 @@ and Bayesian Posterior Refinement</h1>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Achieving robust generalization with rigorous stability guarantees remains the central challenge for the 
+            reliable application of learning-based control in complex physical systems. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            To bridge the gap between offline training (Sim) and responsive online adaptation (Real) in unconstrained practical environments, 
+            this work introduces a framework that synergizes generative adversarial networks (GANs)-based structural priors with online Bayesian Gaussian process (GP) refinement, 
+            enabling rapid dynamic linearization and adaptive modeling.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Specifically, these offline priors provide a warm-start for the online adaptation, significantly enhancing its convergence speed and precision, 
+            while the GP's predictive variance provides the subsequent closed-loop controller with uncertainty awareness. 
+            Definitive convergence and approximation bounds are rigorously established for both components. 
+            Finally, physical multi-quadrotor cooperative payload experiments confirm the framework's superior reliability in disturbance-sensitive scenarios.
           </p>
         </div>
       </div>
