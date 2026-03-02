@@ -407,15 +407,20 @@ and Bayesian Posterior Refinement</h1>
       <div class="column has-text-centered">
         <img src="./static/images/Figure_1.jpg" alt="Proposed Left Result" style="width: 100%; max-width: 800px; border-radius: 8px;">
         <p class="has-text-justified" style="margin-top: 8px; font-size: 0.9em; line-height: 1.4;">
-          Overview of the proposed uncertainty-aware learning framework. The offline phase utilizes GANs to extract structural priors $\{f_0, g_0\}$, initializing the linearization control law $u = g_0^{-1}(\eta - f_0)$. Subsequently, the online Bayesian GP incorporates these priors as the baseline mean, iteratively refining the dynamics estimate against real-time data to ensure the system converges to the linear form $\dot{x}_n = \eta$. Ultimately, the closed-loop controller operates on these linearized dynamics to execute precise trajectory tracking, explicitly leveraging the predictive uncertainty quantified by the online Bayesian update.
+          The offline phase utilizes GANs to extract structural priors f0, g0, 
+          initializing the linearization control law. Subsequently, the online Bayesian GP incorporates these priors as the baseline mean, iteratively refining the dynamics estimate against real-time data to ensure the system converges to the linear form $\dot{x}_n = \eta$. Ultimately, the closed-loop controller operates on these linearized dynamics to execute precise trajectory tracking, explicitly leveraging the predictive uncertainty quantified by the online Bayesian update.
         </p>
       </div>
 
       <div class="column has-text-centered">
         <img src="./static/images/Figure_2.jpg" alt="Proposed Right Result" style="width: 100%; max-width: 800px; border-radius: 8px;">
-        <p style="margin-top: 10px; font-size: 1.1em; font-weight: bold;">
-          (b) Trajectory Tracking
+        <p class="has-text-justified" style="margin-top: 8px; font-size: 0.9em; line-height: 1.4;">
+          The offline phase establishes structural priors f0, g0 via adversarial gradient dynamics. 
+          During deployment, the online Bayesian phase continuously fuses these priors with real-time data to update posterior estimates, 
+          which subsequently drive the robust feedback linearization and adaptive gain scheduling.}
         </p>
+
+        
       </div>
 
     </div>
