@@ -157,19 +157,20 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Achieving robust generalization with rigorous stability guarantees remains the central challenge for the 
-            reliable application of learning-based control in complex physical systems. 
+            For learning-based control in complex physical systems, 
+            bridging the "sim-to-real" gap while preserving strict stability guarantees remains a primary challenge. 
           </p>
           <p>
-            To bridge the gap between offline training (Sim) and responsive online adaptation (Real) in unconstrained practical environments, 
-            this work introduces a framework that synergizes generative adversarial networks (GANs)-based structural priors with online Bayesian Gaussian process (GP) refinement, 
-            enabling rapid dynamic linearization and adaptive modeling.
+            To address this, we introduce a framework that seamlessly integrates offline generative pre-training with online Bayesian adaptation to 
+            reformulate perturbed nonlinear dynamics into a tractable linear system, 
+            thereby facilitating straightforward control synthesis. 
           </p>
           <p>
-            Specifically, these offline priors provide a warm-start for the online adaptation, significantly enhancing its convergence speed and precision, 
-            while the GP's predictive variance provides the subsequent closed-loop controller with uncertainty awareness. 
-            Definitive convergence and approximation bounds are rigorously established for both components. 
-            Finally, physical multi-quadrotor cooperative payload experiments confirm the framework's superior reliability in disturbance-sensitive scenarios.
+            Specifically, Generative Adversarial Networks (GANs) are employed offline to extract underlying structural dynamics as a robust prior. 
+            An online Gaussian Process (GP) subsequently leverages this learned structure to refine the residual dynamics. 
+            Conditioned on this informed prior, the GP posterior inference achieves dramatically accelerated estimation convergence and enhanced overall modeling precision, 
+            ultimately enabling highly accurate real-time feedback linearization. Concurrently, the GP's predictive variance endows the downstream linear controller with critical uncertainty awareness. Theoretically, the framework is supported by strict convergence and approximation bounds. 
+            Practically, hardware experiments involving a multi-quadrotor cooperative payload task demonstrate its superior reliability in disturbance-sensitive scenarios.
           </p>
         </div>
       </div>
