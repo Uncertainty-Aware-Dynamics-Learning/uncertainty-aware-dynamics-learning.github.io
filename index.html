@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Uncertainty-Aware Dynamics Learning via Offline Generative Prior Extraction and Online Bayesian Posterior Refinement1.">
+        content="Uncertainty-Aware Dynamics Learning via Offline Generative Prior and Online Bayesian Refinement.">
   <meta name="keywords" content="Learning based control">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Uncertainty-Aware Dynamics Learning</title>
+  <title>Uncertainty-Aware Dynamics Learning via Offline Generative Prior and Online Bayesian Refinement</title>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
@@ -48,7 +48,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Uncertainty-Aware Dynamics Learning via Offline Generative Prior Extraction and Online Bayesian Posterior Refinement1</h1>
+          <h1 class="title is-1 publication-title">Uncertainty-Aware Dynamics Learning via Offline Generative Prior and Online Bayesian Refinement</h1>
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
@@ -103,8 +103,8 @@
 
       <div class="columns is-centered" style="margin-bottom: 40px;">
         <div class="column">
-          <video autoplay muted loop playsinline width="100%">
-            <source src="./static/videos/agile_front_nodis.mp4" type="video/mp4">
+          <video muted loop playsinline preload="none" poster="./static/videos/web/agile_front_nodis.jpg" data-lazy-play width="100%">
+            <source src="./static/videos/web/agile_front_nodis.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
             Front View (No Intentional Disturbance)
@@ -112,8 +112,8 @@
         </div>
 
         <div class="column">
-          <video autoplay muted loop playsinline width="100%">
-            <source src="./static/videos/agile_rear_nodis11.mp4" type="video/mp4">
+          <video muted loop playsinline preload="none" poster="./static/videos/web/agile_rear_nodis11.jpg" data-lazy-play width="100%">
+            <source src="./static/videos/web/agile_rear_nodis11.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
             Rear View (No Intentional Disturbance)
@@ -123,8 +123,8 @@
 
       <div class="columns is-centered">
         <div class="column">
-          <video autoplay muted loop playsinline width="100%">
-            <source src="./static/videos/front_view_agile.mp4" type="video/mp4">
+          <video muted loop playsinline preload="none" poster="./static/videos/web/front_view_agile.jpg" data-lazy-play width="100%">
+            <source src="./static/videos/web/front_view_agile.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
             Front View (Wind-Payload Coupled Disturbances)
@@ -132,8 +132,8 @@
         </div>
 
         <div class="column">
-          <video autoplay muted loop playsinline width="100%">
-            <source src="./static/videos/rearview_agile.mp4" type="video/mp4">
+          <video muted loop playsinline preload="none" poster="./static/videos/web/rearview_agile.jpg" data-lazy-play width="100%">
+            <source src="./static/videos/web/rearview_agile.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
             Rear View (Wind-Payload Coupled Disturbances)
@@ -168,8 +168,8 @@
           <p>
             Specifically, Generative Adversarial Networks (GANs) are employed offline to extract underlying structural dynamics as a robust prior. 
             An online Gaussian Process (GP) subsequently leverages this learned structure to refine the residual dynamics. 
-            Conditioned on this informed prior, the GP posterior inference achieves dramatically accelerated estimation convergence and enhanced overall modeling precision, 
-            ultimately enabling highly accurate real-time feedback linearization. Concurrently, the GP's predictive variance endows the downstream linear controller with critical uncertainty awareness. Theoretically, the framework is supported by strict convergence and approximation bounds. 
+            Conditioned on this informed prior, GP posterior inference exploits the structural coupling between the learned mean and covariance kernel,
+            aligning Bayesian adaptation with the control objective to achieve precise real-time feedback linearization. Concurrently, the GP's predictive variance endows the linear controller with critical uncertainty awareness. Theoretically, the framework is supported by rigorous stability and approximation bounds.
             Practically, hardware experiments involving a multi-quadrotor cooperative payload task demonstrate its superior reliability in disturbance-sensitive scenarios.
           </p>
         </div>
@@ -182,13 +182,13 @@
 
        
         <div class="publication-video" style="margin-bottom: 40px;">
-          <iframe src="https://www.youtube.com/embed/pB_3STYOr5U"
+          <iframe loading="lazy" src="https://www.youtube.com/embed/pB_3STYOr5U"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
 
       
         <div class="publication-video">
-          <iframe src="https://player.bilibili.com/player.html?bvid=BV1JsPGzbEZ9&page=1&high_quality=1&danmaku=0&autoplay=0"
+          <iframe loading="lazy" src="https://player.bilibili.com/player.html?bvid=BV1JsPGzbEZ9&page=1&high_quality=1&danmaku=0&autoplay=0"
         frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
         </div>
 
@@ -211,8 +211,8 @@
     <div class="columns is-centered">
       
       <div class="column">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="./static/videos/offline_front.mp4" type="video/mp4">
+        <video controls muted loop playsinline preload="none" poster="./static/videos/web/offline_front.jpg" data-lazy-play width="100%">
+          <source src="./static/videos/web/offline_front.mp4" type="video/mp4">
         </video>
         <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
            Front View <br>
@@ -220,8 +220,8 @@
       </div>
 
       <div class="column">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="./static/videos/offline_rear.mp4" type="video/mp4">
+        <video controls muted loop playsinline preload="none" poster="./static/videos/web/offline_rear.jpg" data-lazy-play width="100%">
+          <source src="./static/videos/web/offline_rear.mp4" type="video/mp4">
         </video>
         <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
           Rear View <br>
@@ -245,8 +245,8 @@
     <div class="columns is-centered">
       
       <div class="column">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="./static/videos/b1_front.mp4" type="video/mp4">
+        <video controls muted loop playsinline preload="none" poster="./static/videos/web/b1_front.jpg" data-lazy-play width="100%">
+          <source src="./static/videos/web/b1_front.mp4" type="video/mp4">
         </video>
         <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
            Front View <br>
@@ -254,8 +254,8 @@
       </div>
 
       <div class="column">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="./static/videos/b1_rear.mp4" type="video/mp4">
+        <video controls muted loop playsinline preload="none" poster="./static/videos/web/b1_rear.jpg" data-lazy-play width="100%">
+          <source src="./static/videos/web/b1_rear.mp4" type="video/mp4">
         </video>
         <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
           Rear View <br>
@@ -266,7 +266,7 @@
 
     <div class="columns is-centered" style="margin-top: -50px;">
       <div class="column is-full-width has-text-centered">
-        <img src="./static/images/B1-result.jpg" alt="Baseline 1 Results" style="width: 40%; max-width: 1000px; border-radius: 8px;">
+        <img loading="lazy" src="./static/images/B1-result.jpg" alt="Baseline 1 Results" style="width: 40%; max-width: 1000px; border-radius: 8px;">
       </div>
     </div>
 
@@ -285,8 +285,8 @@
     <div class="columns is-centered">
       
       <div class="column">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="./static/videos/b4_front.mp4" type="video/mp4">
+        <video controls muted loop playsinline preload="none" poster="./static/videos/web/b4_front.jpg" data-lazy-play width="100%">
+          <source src="./static/videos/web/b4_front.mp4" type="video/mp4">
         </video>
         <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
            Front View <br>
@@ -294,8 +294,8 @@
       </div>
 
       <div class="column">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="./static/videos/b4_rear.mp4" type="video/mp4">
+        <video controls muted loop playsinline preload="none" poster="./static/videos/web/b4_rear.jpg" data-lazy-play width="100%">
+          <source src="./static/videos/web/b4_rear.mp4" type="video/mp4">
         </video>
         <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
           Rear View <br>
@@ -306,7 +306,7 @@
 
      <div class="columns is-centered" style="margin-top: -50px;">
       <div class="column is-full-width has-text-centered">
-        <img src="./static/images/B2-result.jpg" alt="Baseline 2 Results" style="width: 40%; max-width: 1000px; border-radius: 8px;">
+        <img loading="lazy" src="./static/images/B2-result.jpg" alt="Baseline 2 Results" style="width: 40%; max-width: 1000px; border-radius: 8px;">
       </div>
     </div>
 
@@ -325,8 +325,8 @@
     <div class="columns is-centered">
       
       <div class="column">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="./static/videos/b3_front.mp4" type="video/mp4">
+        <video controls muted loop playsinline preload="none" poster="./static/videos/web/b3_front.jpg" data-lazy-play width="100%">
+          <source src="./static/videos/web/b3_front.mp4" type="video/mp4">
         </video>
         <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
            Front View <br>
@@ -334,8 +334,8 @@
       </div>
 
       <div class="column">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="./static/videos/b3_rear.mp4" type="video/mp4">
+        <video controls muted loop playsinline preload="none" poster="./static/videos/web/b3_rear.jpg" data-lazy-play width="100%">
+          <source src="./static/videos/web/b3_rear.mp4" type="video/mp4">
         </video>
         <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
           Rear View <br>
@@ -346,7 +346,7 @@
 
      <div class="columns is-centered" style="margin-top: -50px;">
       <div class="column is-full-width has-text-centered">
-        <img src="./static/images/B3_result.jpg" alt="Baseline 3 Results" style="width: 40%; max-width: 1000px; border-radius: 8px;">
+        <img loading="lazy" src="./static/images/B3_result.jpg" alt="Baseline 3 Results" style="width: 40%; max-width: 1000px; border-radius: 8px;">
       </div>
     </div>
 
@@ -365,8 +365,8 @@
     <div class="columns is-centered">
       
       <div class="column">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="./static/videos/b2_front1.mp4" type="video/mp4">
+        <video controls muted loop playsinline preload="none" poster="./static/videos/web/b2_front1.jpg" data-lazy-play width="100%">
+          <source src="./static/videos/web/b2_front1.mp4" type="video/mp4">
         </video>
         <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
            Front View <br>
@@ -374,8 +374,8 @@
       </div>
 
       <div class="column">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="./static/videos/b2_rear1.mp4" type="video/mp4">
+        <video controls muted loop playsinline preload="none" poster="./static/videos/web/b2_rear1.jpg" data-lazy-play width="100%">
+          <source src="./static/videos/web/b2_rear1.mp4" type="video/mp4">
         </video>
         <p class="has-text-centered" style="margin-top: 10px; font-weight: bold;">
           Rear View <br>
@@ -386,7 +386,7 @@
 
      <div class="columns is-centered" style="margin-top: -50px;">
       <div class="column is-full-width has-text-centered">
-        <img src="./static/images/B4_result.jpg" alt="Baseline 4 Results" style="width: 40%; max-width: 1000px; border-radius: 8px;">
+        <img loading="lazy" src="./static/images/B4_result.jpg" alt="Baseline 4 Results" style="width: 40%; max-width: 1000px; border-radius: 8px;">
       </div>
     </div>
 
@@ -404,7 +404,7 @@
 
     <div class="columns is-centered">
       <div class="column has-text-centered">
-        <img src="./static/images/Figure_1.jpg" alt="Proposed Left Result" style="width: 100%; max-width: 800px; border-radius: 8px;">
+        <img loading="lazy" src="./static/images/web/Figure_1.jpg" alt="Proposed Left Result" style="width: 100%; max-width: 800px; border-radius: 8px;">
         <p class="has-text-justified" style="margin-top: 8px; font-size: 0.9em; line-height: 1.4;">
           The offline phase utilizes GANs to extract structural priors f0, g0, 
           initializing the linearization control law. Subsequently, the online Bayesian GP incorporates these priors as the baseline mean, 
@@ -414,7 +414,7 @@
       </div>
 
       <div class="column has-text-centered">
-        <img src="./static/images/Figure_2.jpg" alt="Proposed Right Result" style="width: 100%; max-width: 800px; border-radius: 8px;">
+        <img loading="lazy" src="./static/images/web/Figure_2.jpg" alt="Proposed Right Result" style="width: 100%; max-width: 800px; border-radius: 8px;">
         <p class="has-text-justified" style="margin-top: 8px; font-size: 0.9em; line-height: 1.4;">
           The offline phase establishes structural priors f0, g0 via adversarial gradient dynamics. 
           During deployment, the online Bayesian phase continuously fuses these priors with real-time data to update posterior estimates, 
@@ -426,7 +426,7 @@
    <div class="columns is-centered is-vcentered" style="margin-top: 40px;">
       
       <div class="column is-half has-text-centered">
-        <img src="./static/images/F33.jpg" alt="Hardware and Experimental Setup" style="width: 100%; max-width: 600px; border-radius: 8px;">
+        <img loading="lazy" src="./static/images/web/F33.jpg" alt="Hardware and Experimental Setup" style="width: 100%; max-width: 600px; border-radius: 8px;">
         <p class="has-text-centered" style="margin-top: 10px; font-weight: bold; font-size: 0.9em;">
           Hardware Architecture and UWB Positioning Setup
         </p>
@@ -479,6 +479,29 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Each muted clip downloads and plays only while it is on screen
+  // (preload="none"), so the page no longer fetches every video at once.
+  document.addEventListener('DOMContentLoaded', function () {
+    var clips = document.querySelectorAll('video[data-lazy-play]');
+    var start = function (clip) {
+      var playing = clip.play();
+      if (playing && playing.catch) playing.catch(function () {});
+    };
+    if (!('IntersectionObserver' in window)) {
+      clips.forEach(start);
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) start(entry.target);
+        else if (!entry.target.paused) entry.target.pause();
+      });
+    }, { rootMargin: '200px 0px', threshold: 0.1 });
+    clips.forEach(function (clip) { observer.observe(clip); });
+  });
+</script>
 
 </body>
 </html>
