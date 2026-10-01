@@ -406,22 +406,13 @@
     </div>
 
     <div class="columns is-centered">
-      <div class="column has-text-centered">
-        <img loading="lazy" src="./static/images/web/Figure_1.jpg" alt="Proposed Left Result" style="width: 100%; max-width: 800px; border-radius: 8px;">
+      <div class="column is-two-thirds has-text-centered">
+        <img loading="lazy" src="./static/images/web/Figure_1.jpg" alt="Framework overview" style="width: 100%; max-width: 800px; border-radius: 8px;">
         <p class="has-text-justified" style="margin-top: 8px; font-size: 0.9em; line-height: 1.4;">
           The offline phase utilizes GANs to extract structural priors f0, g0, 
           initializing the linearization control law. Subsequently, the online Bayesian GP incorporates these priors as the baseline mean, 
           iteratively refining the dynamics estimate against real-time data to ensure the system converges to the linear form. 
           Ultimately, the closed-loop controller operates on these linearized dynamics to execute precise trajectory tracking, explicitly leveraging the predictive uncertainty quantified by the online Bayesian update.
-        </p>
-      </div>
-
-      <div class="column has-text-centered">
-        <img loading="lazy" src="./static/images/web/Figure_2.jpg" alt="Proposed Right Result" style="width: 100%; max-width: 800px; border-radius: 8px;">
-        <p class="has-text-justified" style="margin-top: 8px; font-size: 0.9em; line-height: 1.4;">
-          The offline phase establishes structural priors f0, g0 via adversarial gradient dynamics. 
-          During deployment, the online Bayesian phase continuously fuses these priors with real-time data to update posterior estimates, 
-          which subsequently drive the robust feedback linearization and adaptive gain scheduling.
         </p>
       </div>
     </div>
